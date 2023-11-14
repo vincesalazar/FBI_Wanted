@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+$col-main:rgb(65, 4, 0);
+$col-secondary:rgb(255, 255, 255);
+$col-accent:rgba(182, 182, 182, 0.699);
+
+body{
+  background-color: $col-main;
+  color: $col-secondary;
+  font-family: 'Nanum Gothic', sans-serif;;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1{
+  font-size: 4rem;
+}
+.wantedContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  h4{
+    word-wrap: wrap;
+    font-size: 1.5rem;
+    // text-decoration: underline;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid;
+    // border-right: 4px solid rgb(180, 180, 180);
+  }
+  .perContainer{
+    // border: black 4px solid;
+    border-radius: 10px;
+    width: 15rem;
+    
+    margin: .5rem;
+    box-shadow: 0 0 0 -5px rgb(153, 0, 0);
+    transition: box-shadow .25s, transform .25s;
+    padding: 1rem;
+    &:hover{
+      box-shadow: 1px 21px 76px -5px red;
+      transform: scale(1.03);
+    }
+    .wantedImg{
+      padding: 5rem;
+      background-size: contain;
+      background-position: center;
+      // display: inline;
+    }
+  }
+}
+button{
+  color: inherit;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.45rem;
+  transition: color .25s;
+  cursor: pointer;
+  &:hover{
+    color: rgb(146, 146, 146);
+  }
+}
+input[type=number]{
+  background-color:$col-accent;
+  outline: none;
+  border: none;
+  width: 4rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: .3rem;
+  color: white;
+  transition: background-color .25s;
+  &:hover{
+    background-color:rgba(255, 255, 255, 0)
+  }
+  &:focus{
+    background-color:rgba(255, 255, 255, 0)
+  }
+}
